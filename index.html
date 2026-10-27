@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulários</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src ="js/post.js" defer></script>
+    </head>
+    <body>
+        <header id="cabeçalho">
+            <h1>Gadgets</h1>
+            <p>Cadastre um novo gadget.</p>
+        </header>
+        <main>
+
+            <h2>Novo gadget</h2>
+
+            <form id="form-gadget">
+
+                <label for="title">Modelo do dispositivo:</label>
+                <input id="title" name="title" type="text" minlength="3" maxlength="120" required/>
+
+                <label for="categoria">Categoria:</label>
+                <input id="categoria" name="categoria" type="text" required/>
+
+                <label for="marca">Marca:</label>
+                <input id="marca" name="marca" type="text" required/>
+
+                <label for="preco">Preço:</label>
+                <input id="preco" name="preco" type="number" required/>
+
+                <label for="ano_lancamento">Ano de lançamento:</label>
+                <input id="ano_lancamento" name="ano_lancamento" type="number" required/>
+
+                <label for="imageUrl">Url da imagem (opcional)</label>
+                <input id="imageUrl" name="imageUrl" type="url"/>
+
+                <button type="submit">Cadastrar dispositivo</button>
+            </form>
+
+            <p id="resposta"></p>
+
+        </main>
+        <footer>
+            <p>Prática de formulários HTML.</p>
+        </footer>
+    </body>
+</html>
